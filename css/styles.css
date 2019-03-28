@@ -1,0 +1,275 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.pagecontainer {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	padding-bottom: 2.5rem;
+}
+
+.body-container {
+	text-align: center;
+	display: inline-block;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+}
+
+#homecontainer {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	z-index: 1000;
+}
+
+.Name {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.slidecontainer {
+	position: absolute;
+	transition: opacity .75s ease-in;
+	text-align: center;
+	width: 100%;
+	height: 600px;
+	z-index: 1000;
+}
+
+.slide {
+	margin: 0 auto;
+	display: block;
+	z-index: 1000;
+}
+
+.hometext {
+	display: inline-block;
+	position: absolute;
+	z-index: 1000;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+	font-size: 18px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	margin-top: 20px;
+	min-height: 400px;
+	max-width: 800px;
+	max-height: 400px;
+	margin: 0 auto;
+	color: white;
+}
+
+.display-4 {
+	max-width: 800px;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.jumbosubtitle {
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.bodytext {
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+}
+
+.img-fluid {
+	margin-right: 50%;
+	margin-right: 50%;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.display-4 {
+	padding-left: 10px;
+}
+
+.jumbosubtitle {
+	padding-left: 10px;
+}
+
+.hometext {
+	display: inline-block;
+	position: absolute;
+	z-index: 1000;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+	font-size: 18px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#joshuamap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#smokymountainsmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#yosemitemap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#yellowstonemap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#redwoodmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#olympicmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#cascadesmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#tetonmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#canyonmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#glaciermap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#denalimap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#evergladesmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#zionmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#archesmap {
+	height: 250px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+#historyjumbo {
+	background-image: url('../images/historyjumbo.jpg');
+	background-position: center;
+}
+
+.table {
+	margin: auto;
+	width: 35% !important;
+}
+
+.navbar-right {
+	padding-right: 20px;
+}
+
+#volunteerjumbo {
+	background-image: url('../images/volunteer.jpg');
+	background-position: center;
+	max-width: 750px;
+}
+
+#volunteer-form {
+	margin: auto;
+}
+
+input[type=text],
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccdc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccdc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: darkolivegreen;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#formholder {
+	border-radius: 5px;
+	width: 500px;
+	margin-left: 400px;
+	margin-right: 400px;
+	align-content: center;
+	vertical-align: middle;
+	margin: 0 auto;
+}

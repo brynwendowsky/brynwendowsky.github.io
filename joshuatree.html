@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>America's National Parks | Joshua Tree National Park</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="joshuaTime()">
+    <div class="pagecontainer">
+        <div class="content-wrap">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Advocates of America's National Parks</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/index.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Parks<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="arches.html">Arches National Park</a></li>
+                                    <li><a href="denali.html">Denali National Park</a></li>
+                                    <li><a href="everglades.html">Everglades National Park</a></li>
+                                    <li><a href="grandcanyon.html">Grand Canyon National Park</a></li>
+                                    <li><a href="grandteton.html">Grand Teton National Park</a></li>
+                                    <li><a href="smokymountains.html">Great Smoky Mountains National Park</a></li>
+                                    <li><a href="joshuatree.html">Joshua Tree National Park</a></li>
+                                    <li><a href="northcascades.html">North Cascades National Park</a></li>
+                                    <li><a href="olympic.html">Olympic National Park</a></li>
+                                    <li><a href="redwood.html">Redwood National Park</a></li>
+                                    <li><a href="yellowstone.html">Yellowstone National Park</a></li>
+                                    <li><a href="yosemite.html">Yosemite National Park</a></li>
+                                    <li><a href="zion.html">Zion National Park</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="volunteer.html">Get Involved!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron" id="joshuajumbo">
+                <h1 class="display-4">Joshua Tree National Park</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="jumbosubtitle">Wonder at the confluence of the Mojave and Colorado deserts. </p>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <div id='joshuamap'></div>
+            </div>
+            <br>
+            <br>
+            <div class="body-container">
+                <h3 class="bodyheader">Where Two Deserts Meet</h3>
+                <p class="bodytext">Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California. Come explore for yourself.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card align-items-center">
+                            <img class="center-block" src="images/joshuatreecamping.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Camping</h4>
+                                <p class="card-text">Blah blah blah blah blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto  d-block col-md-4">
+                        <div class="card">
+                            <img class="center-block" src="images/joshuatreeexplore.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Plan Your Visit</h4>
+                                <p class="card-text">Blah Blah Blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="center-block" src="images/joshuatreehiking.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Hiking</h4>
+                                <p class="card-text">blah blah blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/34d13n116d31/joshua-tree/" data-label_1="Joshua Tree National Park" data-label_2="WEATHER" data-theme="pure">Joshua Tree National Park WEATHER</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+            </script>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ5bndlbmRvd3NreSIsImEiOiJjanQ5Ym92ZjkwaTI0NDNxa2duZGJodDMwIn0.7aKke4sXg7KjqxR1kaXTCg';
+                const map = new mapboxgl.Map({
+                    container: 'joshuamap',
+                    style: 'mapbox://styles/brynwendowsky/cjtf5v5185kk81fquxdcw7ryk',
+                    center: [-115.90426, 33.875695],
+                    zoom: 8
+                });
+            </script>
+
+            <footer class="footer">
+                <p class="text-muted">Copyright Advocates of America's National Parks, Inc 2019 All Rights Reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

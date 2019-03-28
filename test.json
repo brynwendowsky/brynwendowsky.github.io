@@ -1,0 +1,11 @@
+[
+    {"Make": "Toyota",
+     "Model": "Camry",
+     "Year": 1998,
+    "New": false
+    },
+    {"Make": "Honda",
+    "Model": "CR-V",
+    "Year": 2019,
+    "New": true}
+]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>America's National Parks | Grand Canyon National Park</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="canyonTime()">
+    <div class="pagecontainer">
+        <div class="content-wrap">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Advocates of America's National Parks</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Parks<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="arches.html">Arches National Park</a></li>
+                                    <li><a href="denali.html">Denali National Park</a></li>
+                                    <li><a href="everglades.html">Everglades National Park</a></li>
+                                    <li><a href="grandcanyon.html">Grand Canyon National Park</a></li>
+                                    <li><a href="grandteton.html">Grand Teton National Park</a></li>
+                                    <li><a href="smokymountains.html">Great Smoky Mountains National Park</a></li>
+                                    <li><a href="joshuatree.html">Joshua Tree National Park</a></li>
+                                    <li><a href="northcascades.html">North Cascades National Park</a></li>
+                                    <li><a href="olympic.html">Olympic National Park</a></li>
+                                    <li><a href="redwood.html">Redwood National Park</a></li>
+                                    <li><a href="yellowstone.html">Yellowstone National Park</a></li>
+                                    <li><a href="yosemite.html">Yosemite National Park</a></li>
+                                    <li><a href="zion.html">Zion National Park</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="volunteer.html">Get Involved!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron" id="canyonjumbo">
+                <h1 class="display-4">Grand Canyon National Park</h1>
+                <p class="jumbosubtitle">Yeah. It's big.</p>
+            </div>
+            <div class="col-md-12">
+                <div id="canyonmap"></div>
+            </div>
+            <br>
+            <br>
+            <div class="body-container">
+                <h3 class="bodyheader">Size Beyond Compare
+               </h3>
+                <p class="bodytext">Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.
+                    <br>
+                    <br> South Rim is open all year. North Rim is closed for the winter.
+                    <br>
+                    <br> On February 26, 1919, Grand Canyon became a National Park. This is our Centennial Year!
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card align-items-center">
+                            <img class="center-block" src="images/grandcanyonhike.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Hiking</h4>
+                                <p class="card-text">Blah blah blah blah blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto  d-block col-md-4">
+                        <div class="card">
+                            <img class="center-block" src="images/grandcanyonplan.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Plan Your Visit</h4>
+                                <p class="card-text">Blah Blah Blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="center-block" src="images/grandcanyonexplore.jpg" height="250" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Learn More</h4>
+                                <p class="card-text">blah blah blah blah blah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/36d05n112d14/grand-canyon-village/" data-label_1="GRAND CANYON NATIONAL PARK" data-label_2="WEATHER" data-theme="pure">GRAND CANYON NATIONAL PARK WEATHER</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+            </script>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ5bndlbmRvd3NreSIsImEiOiJjanQ5Ym92ZjkwaTI0NDNxa2duZGJodDMwIn0.7aKke4sXg7KjqxR1kaXTCg';
+                const map = new mapboxgl.Map({
+                    container: 'canyonmap',
+                    style: 'mapbox://styles/brynwendowsky/cjtf5v5185kk81fquxdcw7ryk',
+                    center: [-112.277647, 36.238724],
+                    zoom: 8
+                });
+            </script>
+
+            <footer class="footer">
+                <p class="text-muted">Copyright Advocates of America's National Parks, Inc 2019 All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>America's National Parks</title>
+    <title>America's National Parks | Redwood National Park</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
@@ -23,7 +25,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">Advocates of America's National Parks</a>
+                        <a class="navbar-brand" href="#">Advocates of America's National Parks</a>
                     </div>
                     <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
@@ -52,49 +54,46 @@
                     </div>
                 </div>
             </nav>
-            <br>
-            <h2 class="Name">Advocates of America's National Parks</h2>
-            <br>
-            <div id="homecontainer">
-                <div class="slidecontainer">
-                    <img src="images/olympic.jpg" class="img-responsive slide" alt="Olympic National Park" height="600" width="600">
-                    <div class="hometext"><u>Olympic National Park</u>
-                        <br> Washington</div>
-                </div>
-                <div class="slidecontainer">
-                    <img src="images/yosemitehome.jpg" class="img-responsive slide" alt="Yosemite National Park" height="600" width="600">
-                    <div class="hometext"><u>Yosemite National Park</u>
-                        <br> California</div>
-                </div>
-                <div class="slidecontainer">
-                    <img src="images/zionhome.jpg" class="img-responsive slide" alt="Zion National Park" height="600" width="600">
-                    <div class="hometext"> <u>Zion National Park</u>
-                        <br> Utah</div>
-                </div>
-                <div class="slidecontainer">
-                    <img src="images/grandtetonhome.jpg" class="img-responsive slide" alt="Grand Teton National Park" height="600" width="600">
-                    <div class="hometext"> <u>Grand Teton National Park</u>
-                        <br> Wyoming</div>
-                </div>
-                <div class="slidecontainer">
-                    <img src="images/evergladeshome.jpg" class="img-responsive slide" alt="Zion National Park" height="600" width="600">
-                    <div class="hometext"><u>Everglades National Park</u>
-                        <br> Florida</div>
-                </div>
+            <div class="jumbotron" id="volunteerjumbo">
             </div>
-            <br>
             <div class="body-container">
-                <h4>Environmental Stewardship for Future Generations</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 class="bodyheader">Come Work With Us!</h2>
+                <p class="bodytext">We are always looking for talented, dedicated, and passionate volunteers to join our team. We invite you to submit your resume below, along with some information about yourself!
+                    <br>
+                    <br> Resumes are accepted in <strong>.PDF or .DOCX format only</strong>. Please note that only qualified applicants will be contacted.
+                </p>
+                <br>
+                <br>
             </div>
-            <footer class="footer">
-                <div class="container">
-                    <p class="text-muted">Copyright Advocates of America's National Parks, Inc 2019 All Rights Reserved.</p>
+            <div id="form-container">
+                <div id="formholder">
+                    <form action="mailto:bryn.a.wendowsky@gmail.com" method="get" onsubmit="return ValidationEvent()">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="yourname" placeholder="Your name..." required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="youremail" placeholder="Your email..." required>
+
+                        <label for="comments">Something About You</label>
+                        <textarea id="comments" name="yourcomments" placeholder="Something about you..." required></textarea>
+
+                        <input type="file" name="resume" accept=".pdf, .docx">
+
+                        <br>
+                        <br>
+                        <button type="submit" value="Submit">Submit</button>
+                    </form>
+                    <br>
+                    <br>
+
                 </div>
-            </footer>
+                <br>
+                <footer class="footer">
+                    <p class="text-muted">Copyright Advocates of America's National Parks, Inc 2019 All Rights Reserved.</p>
+                </footer>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
